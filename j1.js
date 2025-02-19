@@ -24,5 +24,11 @@ yesButton.addEventListener("click", function () {
         message.className = "yay";
         message.textContent = "Yay!";
         document.body.appendChild(message);
+    for (let i = 0; i < 3; i++) {
+            const gif = document.createElement("img");
+            gif.src = 
+            gif.className = "yay-gif";
+            document.body.appendChild(gif);
+        }
     });
 });
