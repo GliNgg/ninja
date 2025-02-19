@@ -26,7 +26,7 @@ yesButton.addEventListener("click", function () {
         document.body.appendChild(message);
     for (let i = 0; i < 3; i++) {
             const gif = document.createElement("img");
-            gif.src = "https://www.icegif.com/wp-content/uploads/2023/10/icegif-89.gif"
+            gif.src = "assets/a-lovely-tuji-hug.gif"
             gif.className = "yay-gif";
             document.body.appendChild(gif);
         }
