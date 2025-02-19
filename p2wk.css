@@ -1,0 +1,27 @@
+body {
+background-color: pink;
+}
+h1 {
+	font-size: 100px;
+	text-align: center;
+	font-family: sans-serif;
+}
+.container {
+text-align: center;
+}
+button {
+	border-radius: 5px;
+	font-size: 50px;
+}
+.yes {
+	margin: 100px;
+	background-color: lightgreen;
+}
+.no {
+	margin: 100px;
+	background-color: red;
+}
+.yay {
+	text-align: center;
+	font-size: 200px;
+}
