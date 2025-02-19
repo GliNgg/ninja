@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     noButton.addEventListener("click", function () {
         yesFontSize += 5;
         yesButton.style.fontSize = yesFontSize + "px";
-        noFontSize = Math.max(5, noFontSize - 2);
+        noFontSize = Math.max(10, noFontSize - 2);
         noButton.style.fontSize = noFontSize + "px";
     });
 
@@ -16,6 +16,11 @@ document.addEventListener("DOMContentLoaded", function () {
         const message = document.createElement("p");
         message.className = "yay";
         message.textContent = "Yay!";
+        message.style.position = "absolute";
+        message.style.top = "50%";
+        message.style.left = "50%";
+        message.style.transform = "translate(-50%, -50%)";
+        message.style.fontSize = "5vw";
         document.body.appendChild(message);
 
         const gifPaths = [
@@ -27,11 +32,11 @@ document.addEventListener("DOMContentLoaded", function () {
         ];
 
         const fixedPositions = [
-            { left: "20px", top: "20px" },
-            { left: "80%", top: "10%" },
-            { left: "10%", top: "70%" },
-            { left: "50%", top: "80%" },
-            { left: "75%", top: "50%" }
+            { left: "5%", top: "5%" },
+            { left: "85%", top: "10%" },
+            { left: "5%", top: "80%" },
+            { left: "50%", top: "85%" },
+            { left: "85%", top: "50%" }
         ];
 
         gifPaths.forEach((path, index) => {
@@ -41,6 +46,8 @@ document.addEventListener("DOMContentLoaded", function () {
             gif.style.position = "absolute";
             gif.style.left = fixedPositions[index].left;
             gif.style.top = fixedPositions[index].top;
+            gif.style.width = "10vw";
+            gif.style.height = "auto";
             document.body.appendChild(gif);
         });
     });
