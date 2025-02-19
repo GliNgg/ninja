@@ -26,13 +26,21 @@ document.addEventListener("DOMContentLoaded", function () {
             "assets/tkthao219-bunny.gif"
         ];
 
-        gifPaths.forEach(path => {
+        const fixedPositions = [
+            { left: "20px", top: "20px" },
+            { left: "80%", top: "10%" },
+            { left: "10%", top: "70%" },
+            { left: "50%", top: "80%" },
+            { left: "75%", top: "50%" }
+        ];
+
+        gifPaths.forEach((path, index) => {
             const gif = document.createElement("img");
             gif.src = path;
             gif.className = "yay-gif";
             gif.style.position = "absolute";
-            gif.style.left = Math.random() * (window.innerWidth - 200) + "px";
-            gif.style.top = Math.random() * (window.innerHeight - 200) + 100 + "px";
+            gif.style.left = fixedPositions[index].left;
+            gif.style.top = fixedPositions[index].top;
             document.body.appendChild(gif);
         });
     });
