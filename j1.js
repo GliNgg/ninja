@@ -28,19 +28,19 @@ const gif = document.createElement("img");
         gif.src = "assets/a-lovely-tuji-hug.gif"
         gif.className = "yay-gif";
         document.body.appendChild(gif);
-    const gif = document.createElement("img");
+    const gif1 = document.createElement("img");
         gif.src = "assets/cute-cat.gif"
         gif.className = "yay-gif";
         document.body.appendChild(gif);
-    const gif = document.createElement("img");
+    const gif2 = document.createElement("img");
         gif.src = "assets/happycat.gif"
         gif.className = "yay-gif";
         document.body.appendChild(gif);
-    const gif = document.createElement("img");
+    const gif3 = document.createElement("img");
         gif.src = "assets/icegif-89.gif"
         gif.className = "yay-gif";
         document.body.appendChild(gif);
-    const gif = document.createElement("img");
+    const gif4 = document.createElement("img");
         gif.src = "assets/tkthao219-bunny.gif"
         gif.className = "yay-gif";
         document.body.appendChild(gif);
