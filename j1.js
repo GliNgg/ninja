@@ -26,7 +26,7 @@ yesButton.addEventListener("click", function () {
         document.body.appendChild(message);
     for (let i = 0; i < 3; i++) {
             const gif = document.createElement("img");
-            gif.src = "assets/a-lovely-tuji-hug.gif"
+            gif.src = "assets/happycat.gif"
             gif.className = "yay-gif";
             document.body.appendChild(gif);
         }
