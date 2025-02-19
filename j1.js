@@ -24,6 +24,10 @@ yesButton.addEventListener("click", function () {
         message.className = "yay";
         message.textContent = "Yay!";
         document.body.appendChild(message);
-
+const gif = document.createElement("img");
+        gif.src = "assets/a-lovely-tuji-hug.gif"
+        gif.className = "yay-gif";
+        document.body.appendChild(gif);
     });
 });
+
