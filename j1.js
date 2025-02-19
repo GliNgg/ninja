@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
         message.style.top = "50%";
         message.style.left = "50%";
         message.style.transform = "translate(-50%, -50%)";
-        message.style.fontSize = "5vw";
+        message.style.fontSize = "8vw";
         document.body.appendChild(message);
 
         const gifPaths = [
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
             gif.style.position = "absolute";
             gif.style.left = fixedPositions[index].left;
             gif.style.top = fixedPositions[index].top;
-            gif.style.width = "10vw";
+            gif.style.width = "18vw";
             gif.style.height = "auto";
             document.body.appendChild(gif);
         });
